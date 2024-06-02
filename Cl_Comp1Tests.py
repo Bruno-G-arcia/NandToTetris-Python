@@ -28,12 +28,6 @@ class Comp1Tests():
     a = [1,0,0,1]
     b = [0,1,0,1]
     r = [1,1,1,0]
-    
-    print("[1,0,0,1]")
-    print("[0,1,0,1]")
-    print("[1,1,1,0]")
-    print(comp.NBitAdder(a,b))
-
     print(comp.NBitAdder(a,b) == r)
     print("--")
 
@@ -42,10 +36,10 @@ class Comp1Tests():
     a = [1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,1]
     b = [0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1]
     r = [1,0,0,0,1,0,1,0,1,1,0,0,0,1,1,0]
-    
-    print("1000100010000101")
-    print("0000001001000001")
-    print("1000101011000110")
-    print(comp.NBitAdder(a,b))
-
     print(comp.NBitAdder(a,b) == r)
+    print("--")
+
+  def TestNegative(self):
+    comp = Component1()
+    print(comp.Negative([0,1,0,0]) == [1,1,0,0])
+    print("--")

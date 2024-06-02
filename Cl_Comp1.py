@@ -22,3 +22,13 @@ class Component1():
       result[i] = sum[0]
       c = sum[1]
     return result
+  
+  def Negative(self, al):
+    gate = Gate()
+    leAl = len(al)
+    add  = [0] * leAl
+    add[leAl - 1] = 1 
+    al = gate.NotBus(al)
+    al = self.NBitAdder(al,add)
+    return al
+      

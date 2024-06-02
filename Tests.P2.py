@@ -13,3 +13,6 @@ test.Test4BitAdder()
 
 print("16Bit Adder")
 test.Test16BitAdder()
+
+print("Negative")
+test.TestNegative()
