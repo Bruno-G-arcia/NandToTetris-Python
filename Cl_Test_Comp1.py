@@ -43,3 +43,10 @@ class Comp1Tests():
     comp = Component1()
     print(comp.Negative([0,1,0,0]) == [1,1,0,0])
     print("--")
+
+  def TestInc16(self):
+    comp = Component1()
+    a = [0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1]
+    r = [0,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0]
+    print(comp.Inc(a) == r)
+    print("--")

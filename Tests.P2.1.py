@@ -1,4 +1,4 @@
-from Cl_Comp1Tests import Comp1Tests
+from Cl_Test_Comp1 import Comp1Tests
 
 test = Comp1Tests()
 
@@ -16,3 +16,7 @@ test.Test16BitAdder()
 
 print("Negative")
 test.TestNegative()
+
+print("Inc16")
+test.TestInc16()
+
