@@ -10,6 +10,7 @@ class Ram():
   def __init__(self, nR,nB):
     self.nR = nR
     self.nB = nB
+    self.rL = [0] * nR 
     for i in range(nR):
       self.rL[i] = Comp2()
 
@@ -19,6 +20,7 @@ class Ram():
       number = (2 * number) + b
     return number
 
+  #i - input
   def Run(self,i,add,load):
     DAdd = self.binaToInteger(add)
     reg = self.rL[DAdd]

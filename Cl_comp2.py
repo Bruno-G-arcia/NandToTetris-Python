@@ -7,6 +7,7 @@ class Comp2:
     self.ffBit = a
     return vAux
 
+  #load == 1 escreve no registro
   def Register(self,i,load):
     vAux = self.regBit1
     self.regBit2 = i
